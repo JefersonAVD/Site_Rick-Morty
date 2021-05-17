@@ -1,14 +1,14 @@
 /*------------------Tamanho dos textos----------*/
-h1{font-size: 2rem;color: lightgreen;} 
-h2{font-size: 1rem; text-decoration: none;color:white;} 
+h1{font-size: 100%;color: lightgreen;} 
+h2{font-size: 90%; text-decoration: none;color:white; margin:5px 0 0 0} 
 h2:not(.cardBox h2,.card h2){font-size: 1.5rem; text-decoration: none;color:black;} 
-h3{font-size: 0.9rem;text-decoration: none;color:lightgreen;} 
+h3{font-size: 0.9rem;text-decoration: none;color:lightgreen; margin:5px 0 0 0;} 
 h4{font-size: 0.7rem;text-decoration: none;color:white;}
 a{color: white;transition:0.2s;}
 a:hover{color:lightgreen}
 
 /*------------------Alinhamentos---------------*/
-
+*{box-sizing: border-box;}
 .align{
 	display:inline-block;
 	vertical-align: middle;
@@ -24,13 +24,14 @@ a:hover{color:lightgreen}
 	font-family:'Comic Neue';
 }
 body{
-	max-height:2000px;
 	box-sizing: content-box;
 	background-image: url("bg.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-position: center;
+	background-position: bottom;
+	border-bottom: 50px black solid ;
 }
+
 header{
 	background: rgba(0,0,0,0.7);
 	position:absolute;
@@ -132,15 +133,6 @@ header p{
 	border-radius: 5px;
 	padding: 2px;
 }
-/*------------------footer---------------*/
-footer{
-	background-color: rgba(0,0,0,60%);
-	width: 100%;
-	text-align: center;
-	padding: 0.5rem;
-	
-}
-
 /* menu de personagens*/
 .disable{
 	pointer-events: none;
@@ -196,5 +188,4 @@ footer{
 		width: 90%;
 		margin: 0 auto;
 	}
-	
 }
