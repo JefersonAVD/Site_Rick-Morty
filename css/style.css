@@ -1,6 +1,6 @@
 /*------------------Tamanho dos textos----------*/
 h1{font-size: 100%;color: lightgreen;} 
-h2{font-size: 90%; text-decoration: none;color:white; margin:5px 0 0 0} 
+h2{font-size: 85%; text-decoration: none;color:white; margin:5px 0 0 0} 
 h2:not(.cardBox h2,.card h2){font-size: 1.5rem; text-decoration: none;color:black;} 
 h3{font-size: 0.9rem;text-decoration: none;color:lightgreen; margin:5px 0 0 0;} 
 h4{font-size: 0.7rem;text-decoration: none;color:white;}
