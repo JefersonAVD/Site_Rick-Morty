@@ -1,0 +1,200 @@
+/*------------------Tamanho dos textos----------*/
+h1{font-size: 2rem;color: lightgreen;} 
+h2{font-size: 1rem; text-decoration: none;color:white;} 
+h2:not(.cardBox h2,.card h2){font-size: 1.5rem; text-decoration: none;color:black;} 
+h3{font-size: 0.9rem;text-decoration: none;color:lightgreen;} 
+h4{font-size: 0.7rem;text-decoration: none;color:white;}
+a{color: white;transition:0.2s;}
+a:hover{color:lightgreen}
+
+/*------------------Alinhamentos---------------*/
+
+.align{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.alignTop{
+	display:inline-block;
+	vertical-align: Top;
+	margin-left: 1rem;
+}
+/*------------------Estrutura total---------------*/
+*{
+	font-family:'Comic Neue';
+}
+body{
+	max-height:2000px;
+	box-sizing: content-box;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+}
+header{
+	background: rgba(0,0,0,0.7);
+	position:absolute;
+	top:0;
+	width: 100%;
+}
+.central{
+	width: 960px;
+	margin: 0 auto;
+}
+header img{
+	width: 20%;
+}
+header label{
+	color: lightgreen;
+	font-weight: bold;
+}
+.button, button,input, select{
+	text-decoration: none;
+	color:lightgreen;
+	background: grey;
+	border-radius: 3px;
+	padding:3px;
+	transition: 0.5s;
+	cursor: pointer;
+	border:none;
+}
+.button:hover , button:hover,input:focus,select:focus{
+	background:rgb(53, 52, 52) ;
+}
+.buscar{
+	border:none;
+	display:inline-block;
+	vertical-align: middle;
+}
+label{
+	padding:5px;
+}
+header p{
+	background: red;
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 0.2rem;
+}
+/*------------------Container das listas---------------*/
+#lista{
+	width: 70%;
+	margin: 5rem auto 0 auto ;
+}
+.card{
+	width: 15%;
+	height: 25%;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,40%);
+	margin: 0.5rem;
+	padding:10px;
+	transition: 0.3s;
+}
+.card:hover {
+	background: rgba(0,0,0,70%);
+}
+/*------------------Tamanho das Imagens---------------*/
+.cardImg{
+	width: 40%;
+	border-radius: 0.5rem;
+}
+.miniImg{
+	width: 9%;
+	margin: 0.2rem;
+	box-shadow: rgba(0,0,0,50%) 2px 2px;
+	border-radius: 5px;
+}
+
+/*----------------------Design do char.html---------------*/
+.cardBox{
+	width: 50rem;
+	margin: 5rem auto 0 auto;
+	background-color: rgba(50,50,50,50%);
+	padding: 20px;
+	border-radius: 10px;
+}
+.listBox{
+	width: 50rem;
+	margin: 2rem auto;
+}
+.listBox h2{
+	font-size: 1.5rem;
+}
+/*------------------Display dos episódios---------------*/
+.epiBox{	
+	display: inline-block;
+	vertical-align: top;
+	width: 17%;
+	height: 45%;
+	background-color: rgba(50,50,50,0.7);
+	margin: 0.1rem;
+	border-radius: 5px;
+	padding: 2px;
+}
+/*------------------footer---------------*/
+footer{
+	background-color: rgba(0,0,0,60%);
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	
+}
+
+/* menu de personagens*/
+.disable{
+	pointer-events: none;
+}
+
+@media only screen and (max-width: 540px) {
+/*----------------Adequações pontuais-------------*/
+	*{box-sizing: border-box;}
+	#lista{margin: 0 auto;}
+	.cardimg{ width: 60px;}
+	h1,h2,h3{margin:0; font-size: 0.85rem;}
+	h4{margin:0;font-size:0.6rem}
+	#navegate{margin-top:0.5rem}
+	.miniImg{width: 15%;}
+	.alignTop{margin:3px}
+	.miniImg{width: 15%;}
+/*----------------Adequações importantes-------------*/
+	body{
+		background-image: url(bg2.jpg);
+		background-size: auto;
+	}
+	.central{
+		width:100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding:5% 5% 0 5%;
+	}
+	header{
+		position:static;
+	}
+	.align{
+		width: 100%; 
+		margin-bottom:3px;
+	}
+	.card{
+		padding: 0.2rem;
+		width: 90%;
+		height: 70px;
+		display: grid;
+		grid-gap:0.5rem;
+		grid-template: 'X Y Y Y Z';
+	}
+
+	.cardBox{
+		display:flex;
+		width: 80%;
+		height: 160px;
+		margin:20px auto 0;
+		
+	}
+	.listBox{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}

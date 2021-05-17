@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css"> 
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
+	<title>Multiverso - Rick and Morty</title>
+</head>
+<body>
+	<header>
+		<div class="central">
+			<img class="align" src="img/logo.png">
+			<div class="align">
+				<label for="name" class="align" >Digite o primeiro nome:</label>
+				<input type="text" id="name" name="name"  class="align" placehold="Primeiro Nome">
+				<select id="status" class="align"  name="status">
+					<option></option>
+					<option>alive</option>
+					<option>dead</option>
+					<option>unknown</option>
+				</select>
+				<select id="genero" class="align" name="gender">
+					<option></option>
+					<option>female</option>
+					<option>male</option>
+					<option>genderless</option>
+					<option>unknown</option>
+				</select>
+				<button id='buscar'class="align">Buscar</button>
+				<nav style="color:antiquewhite" id="navegate" class="align">
+					<a class='button disable' id='prev'>Prev</a>
+					<a class='button' id='home' href="index.html">Home</a>
+					<a class='button disable' id='next'>Next</a>
+				</nav>	
+			</div>
+			<p id="erro"></p>
+		</div>
+	</header>
+	<main>
+		<section>
+			<article>
+				<div class="cardBox" id="charBox">
+				</div>
+				<div class="listBox" id="charEpisodes">
+					<h2><em>Episódios onde o personagem aparece</em></h2>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<h4>Por: Jeferson Dias</h4>
+	</footer>
+</body>
+<script type="text/javascript" src="js/char.js"></script>
+</html>
