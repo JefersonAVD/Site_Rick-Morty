@@ -33,11 +33,12 @@ const printBusc = (char) =>{
 
 //----------------Controle da Paginação---------------
 const pagination = (info) =>{ 
-	document.querySelector('#prev').setAttribute('onclick',`getPage('${info.prev}')`)
+	console.log(info)
+	document.querySelector('#prev').setAttribute('onclick',`getBusc('${info.prev}')`)
 	if(info.prev == null) document.querySelector('#prev').classList.add('disable')
 	else{document.querySelector('#prev').classList.remove('disable')}
 	
-	document.querySelector('#next').setAttribute('onclick',`getPage('${info.next}')`)
+	document.querySelector('#next').setAttribute('onclick',`getBusc('${info.next}')`)
 	if(info.next == null) document.querySelector('#next').classList.add('disable')
 	else document.querySelector('#next').classList.remove('disable')
 }	
