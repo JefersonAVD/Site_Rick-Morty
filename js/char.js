@@ -11,9 +11,11 @@ const getChar = (char) =>{
 }
 //----------------Ficha completa dos Personagens---------------
 const pageChar = (char) => {
-    let disable = '';
-	if(char.origin.url == '') disable = 'disable';
-    let html = `<img class="cardImg alignTop" src='${char.image}'>
+	let disableOrigin = '';
+	let disableLocation = '';
+	if(char.origin.url == '') disableOrigin = 'disable';
+	if(char.location.url == '')disableLocation = 'disable';
+	let html = `<img class="cardImg alignTop" src='${char.image}'>
                 <div class="alignTop">
                     <h1>Nome: ${char.name}</h1>
                     <h2>Status: ${char.status}</h2>
