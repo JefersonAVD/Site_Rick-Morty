@@ -20,8 +20,8 @@ const pageChar = (char) => {
                     <h1>Nome: ${char.name}</h1>
                     <h2>Status: ${char.status}</h2>
                     <h2>Gênero: ${char.gender}</h2>
-                    <h2>Origem: <a class='default ${disable}' href="local.html?url=${char.origin.url}">${char.origin.name}</a></h2>
-                    <h2>Último planeta que habitou: <a class='default ${disable}' href="local.html?url=${char.location.url}"> ${char.location.name}</a></h2>
+                    <h2>Origem: <a class='default ${disableOrigin}' href="local.html?url=${char.origin.url}">${char.origin.name}</a></h2>
+                    <h2>Último planeta que habitou: <a class='default ${disableLocation}' href="local.html?url=${char.location.url}"> ${char.location.name}</a></h2>
                 </div>`
     document.querySelector('#charBox').innerHTML = html
     
